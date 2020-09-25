@@ -3,10 +3,48 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="clr-namespace:WpfApplication.Models"
+        xmlns:views="clr-namespace:WpfApplication.Views"
         xmlns:local="clr-namespace:WpfApplication"
+        
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
 
+    <Window.Resources>
+        <DataTemplate x:Name="MessageViewTemplate" DataType="{x:Type models:MessageViewModel}">
+            <views:MessageViewControl DataContext="{Binding}"/>
+        </DataTemplate>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid Grid.Column="0" Background="#FF587EA0">            
+        </Grid>
+        <Grid Grid.Column="1" Background="#FF9BC6EC">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="199*"/>
+                <RowDefinition Height="18*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+        <Grid Grid.Column="2">
+        </Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="150"/>        
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1">
+            
+            <Ellipse />
+            <Button x:Name="messageViewButtton" Content="Messages" Click="messageViewButtton_Click"/>
+            <Button x:Name="contactViewButton" Content="Contacts" Click="contactViewButton_Click"/>
+            <Button x:Name="calenderViewButton" Content="Calender" Click="calenderViewButton_Click"/>
+            <Button x:Name="tasksViewButton" Content="Task" Click="tasksViewButton_Click"/>
+            <Button x:Name="settingsViewButton" Content="Settings" Click="settingsViewButton_Click"/>
+
+        </StackPanel>
+
+        <ContentControl Grid.Column="1" Content="{Binding}"/>
+        
     </Grid>
 </Window>

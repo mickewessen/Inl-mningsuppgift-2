@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApplication.Models;
+using WpfApplication.Views;
 
 namespace WpfApplication
 {
@@ -23,6 +25,31 @@ namespace WpfApplication
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void messageViewButtton_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new MessageViewModel();
+        }
+
+        private void contactViewButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void calenderViewButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tasksViewButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void settingsViewButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
