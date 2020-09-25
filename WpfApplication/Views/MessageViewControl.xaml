@@ -12,7 +12,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0">
+        <StackPanel Grid.Column="0" Background="#FFE5E7EA">
             <Button x:Name="messageButton" Content="Message 1"  Click="messageButton_Click"/>            
         </StackPanel>
         <Grid Grid.Column="1" Margin="20">
