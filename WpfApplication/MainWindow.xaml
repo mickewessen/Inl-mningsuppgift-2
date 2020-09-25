@@ -28,11 +28,7 @@
 
         <StackPanel Grid.Column="1" Background="#FFE5E7EA">
 
-            <Ellipse Height="79" Stroke="#FFDCD7D7" Width="88" Margin="0,30,0,0">
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="/pngguru.com.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
+            <Ellipse Height="79" Stroke="#FFDCD7D7" Width="88" Margin="0,30,0,0"/>
             <TextBlock Text="Wessén, Michael" HorizontalAlignment="Center"/>
             <TextBlock Text=".net Developer" HorizontalAlignment="Center" FontSize="10"/>
             <StackPanel Orientation="Horizontal">
