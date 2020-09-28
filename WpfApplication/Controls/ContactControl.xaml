@@ -17,9 +17,9 @@
 
             <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="10,0,0,0">
                 <TextBlock x:Name="contactName" FontFamily="Bold"/>
-                <TextBlock x:Name="contactRole" FontSize="8" FontStyle="Italic" Margin="0,5,0,0"/>
-                <TextBlock x:Name="contactEmail" FontSize="6" FontStyle="Italic"/>
-                <TextBlock x:Name="contactPhoneNumber" FontSize="6" FontStyle="Italic"/>
+                <TextBlock x:Name="contactRole" FontSize="10" FontStyle="Italic" Margin="0,5,0,0"/>
+                <TextBlock x:Name="contactEmail" FontSize="10" FontStyle="Italic"/>
+                <TextBlock x:Name="contactPhoneNumber" FontSize="8" FontStyle="Italic"/>
 
             </StackPanel>
             

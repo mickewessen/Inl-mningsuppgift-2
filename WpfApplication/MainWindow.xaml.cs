@@ -34,7 +34,7 @@ namespace WpfApplication
 
         private void contactViewButton_Click(object sender, RoutedEventArgs e)
         {
-
+            DataContext = new ContactViewModel();
         }
 
         private void calenderViewButton_Click(object sender, RoutedEventArgs e)
@@ -48,6 +48,11 @@ namespace WpfApplication
         }
 
         private void settingsViewButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void messageViewButtton_Click_1(object sender, RoutedEventArgs e)
         {
 
         }

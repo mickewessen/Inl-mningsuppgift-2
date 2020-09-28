@@ -26,6 +26,7 @@ namespace WpfApplication.Views
         private void messageButton_Click(object sender, RoutedEventArgs e)
         {
 
+
         }
     }
 }

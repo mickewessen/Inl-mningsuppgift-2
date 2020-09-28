@@ -6,4 +6,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="pngguru.com.png" />
+    <None Remove="Views\pngguru - Copy.com.png" />
+    <None Remove="Views\pngguru.com.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pngguru.com.png" />
+  </ItemGroup>
+
 </Project>

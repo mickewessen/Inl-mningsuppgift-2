@@ -14,43 +14,15 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Background="#FFE5E7EA">
-        
+            <Controls:ContactControl ContactEmail="micke.wessen@hotmail.com" ContactName="Michael Wessèn" ContactPhoneNumber="+46 73 814 20 92" ContactRole=".net Developer"/>
+            <Controls:ContactControl ContactEmail="samuelwessen@hotmail.com" ContactName="Samuel Wessén" ContactPhoneNumber="+46 73 814 20 93" ContactRole="Human Resources" />
+            <Controls:ContactControl ContactName="Sofie Lesnik" ContactPhoneNumber="+46 73 814 20 94" ContactRole="Administration" ContactEmail="sofielesnik@hotmail.com"/>
+            <Controls:ContactControl ContactEmail="danielwessen@hotmail.com" ContactName="Daniel Wessèn" ContactPhoneNumber="+46 73 814 20 95" ContactRole="CEO"/>
+            <Controls:ContactControl ContactEmail="robbinjanlen@hotmail.com" ContactName="Robbin Janlén" ContactPhoneNumber="+46 73 814 20 96" ContactRole="Sales Department"/>
+
 
 
         </StackPanel>
-        <Grid Grid.Column="1" Margin="20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-
-            <StackPanel Grid.Row="0">
-                <TextBlock x:Name="subject" Text="Subject of the Message" FontSize="18" FontWeight="Bold"/>
-            </StackPanel>
-
-            <Grid Grid.Row="1" Margin="0,15,0,15">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="auto"/>
-                </Grid.ColumnDefinitions>
-
-                <StackPanel Grid.Column="0" VerticalAlignment="Center">
-                    <TextBlock x:Name="from" Text="CONTACT NAME (username@domain.se)"/>
-                    <TextBlock x:Name="to" Text="To Michael Wessèn (michael.wessen@hotmail.se)" FontSize="10"/>
-                </StackPanel>
-                <StackPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center">
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:Name="btnReply" Content="REPLY" Margin="5,0"/>
-                        <Button x:Name="btnReplyAll" Content="REPLY ALL" Margin="5,0"/>
-                        <Button x:Name="btnForward" Content="FORWARD" Margin="5,0"/>
-                    </StackPanel>
-                    <TextBlock x:Name="time" Text="Fri 15:30" TextAlignment="Right" Margin="0,5,0,0"/>
-                </StackPanel>
-            </Grid>
-            <TextBlock Grid.Row="2" x:Name="body" TextWrapping="Wrap" Text=""/>
-
-        </Grid>
 
     </Grid>
 </UserControl>

@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="WpfApplication.Controls.MessageControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApplication.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="250" Height="65" Width="250">
+
+    <Button x:Name="MessageControlButton" Click="messageButton_Click">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="175"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="10,5,0,0">
+                <TextBlock x:Name="fromName" Text="" FontWeight="Bold" FontSize="14"/>
+                <TextBlock x:Name="fromEmail" Text="" FontWeight="Normal" FontSize="10" FontStyle="Italic"/>
+                <TextBlock x:Name="subjectOfMessage" Text="" FontSize="10" FontStyle="Italic" Margin="0,5,0,0"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="1" Margin="0,10,0,0">
+                <TextBlock x:Name="dateOfMessage" Text="" TextAlignment="Right" FontSize="10"/>
+                <TextBlock x:Name="timeOfMessage" Text="" TextAlignment="Right" FontSize="10"/>
+
+            </StackPanel>
+            </Grid>
+    </Button>
+
+
+
+
+
+
+
+            
+
+</UserControl>

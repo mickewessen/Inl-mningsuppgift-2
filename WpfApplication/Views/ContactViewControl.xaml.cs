@@ -22,5 +22,10 @@ namespace WpfApplication.Views
         {
             InitializeComponent();
         }
+
+        private void contactViewButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

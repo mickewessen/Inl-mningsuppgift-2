@@ -13,8 +13,13 @@
 
     <Window.Resources>
         <DataTemplate x:Name="MessageViewTemplate" DataType="{x:Type models:MessageViewModel}">
-            <views:MessageViewControl DataContext="{Binding}" />
+            <views:MessageViewControl DataContext="{Binding}" />            
         </DataTemplate>
+        
+        <DataTemplate x:Name="ContactViewTemplate" DataType="{x:Type models:ContactViewModel}">
+            <views:ContactViewControl DataContext="{Binding}" />
+        </DataTemplate>
+        
     </Window.Resources>
 
     <Grid >
@@ -28,7 +33,11 @@
 
         <StackPanel Grid.Column="1" Background="#FFE5E7EA">
 
-            <Ellipse Height="79" Stroke="#FFDCD7D7" Width="88" Margin="0,30,0,0"/>
+            <Ellipse Height="79" Stroke="#FFDCD7D7" Width="88" Margin="0,30,0,0">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/pngguru.com.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
             <TextBlock Text="Wessén, Michael" HorizontalAlignment="Center"/>
             <TextBlock Text=".net Developer" HorizontalAlignment="Center" FontSize="10"/>
             <StackPanel Orientation="Horizontal">
