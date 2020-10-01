@@ -14,11 +14,11 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Background="#FFE5E7EA">
-            <Controls:ContactControl ContactEmail="micke.wessen@hotmail.com" ContactName="Michael Wessèn" ContactPhoneNumber="+46 73 814 20 92" ContactRole=".net Developer"/>
-            <Controls:ContactControl ContactEmail="samuelwessen@hotmail.com" ContactName="Samuel Wessén" ContactPhoneNumber="+46 73 814 20 93" ContactRole="Human Resources" />
-            <Controls:ContactControl ContactName="Sofie Lesnik" ContactPhoneNumber="+46 73 814 20 94" ContactRole="Administration" ContactEmail="sofielesnik@hotmail.com"/>
-            <Controls:ContactControl ContactEmail="danielwessen@hotmail.com" ContactName="Daniel Wessèn" ContactPhoneNumber="+46 73 814 20 95" ContactRole="CEO"/>
-            <Controls:ContactControl ContactEmail="robbinjanlen@hotmail.com" ContactName="Robbin Janlén" ContactPhoneNumber="+46 73 814 20 96" ContactRole="Sales Department"/>
+            <Controls:ContactControl ContactEmail="micke.wessen@hotmail.com" ContactName="Michael Wessèn" ContactPhoneNumber="+46 73 814 20 92" ContactRole=".net Developer" ContactImage="/Views/pngguru.com.png"/>
+            <Controls:ContactControl ContactEmail="samuelwessen@hotmail.com" ContactName="Samuel Wessén" ContactPhoneNumber="+46 73 814 20 93" ContactRole="Human Resources" ContactImage="/Views/pngguru.com.png" />
+            <Controls:ContactControl ContactName="Sofie Lesnik" ContactPhoneNumber="+46 73 814 20 94" ContactRole="Administration" ContactEmail="sofielesnik@hotmail.com" ContactImage="/pngguru.com.png"/>
+            <Controls:ContactControl ContactEmail="danielwessen@hotmail.com" ContactName="Daniel Wessèn" ContactPhoneNumber="+46 73 814 20 95" ContactRole="CEO" ContactImage="/pngguru.com.png"/>
+            <Controls:ContactControl ContactEmail="robbinjanlen@hotmail.com" ContactName="Robbin Janlén" ContactPhoneNumber="+46 73 814 20 96" ContactRole="Sales Department" ContactImage="/pngguru.com.png"/>
 
 
 
